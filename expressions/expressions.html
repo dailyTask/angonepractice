@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Expressions</title>
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="expressions.js"></script>
+
+
+</head>
+<body ng-app="myApp">
+<div ng-init="quantity=1;cost=30;student={firstname:'sufiyan',lastname:'mansoor',rollno:101};marks=[80,60,70,55,43,92]">
+<p>Hello::{{student.firstname +"  "+student.lastname}}!</p>
+<p>Expense On Books:{{cost * quantity}} Rs</p>
+<p>Roll No:{{student.rollno}}</p>
+<p>Marks(Math):{{marks["0"]}}</p>
+</div>
+</body>
+</html>

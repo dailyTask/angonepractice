@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>HTML Dom </title>
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="dom.js"></script>
+</head>
+<body ng-app="myApp">
+<div ng-controller="democtrl">
+<!--ng-disabled-->
+    <input type="checkbox" ng-model="enabledisableButton"/>Disable Button
+    <button ng-disabled="enabledisableButton">Click Not me Clcik check box!</button>
+    <br/>
+    <!--ng-show-->
+    <input type="checkbox" ng-model="showHiden"/>This Is show Hiden
+    <button ng-show="showHiden">Click Me To Show!!!</button>
+    <br/>
+    <!--ng-hide-->
+    <input type="checkbox" ng-model="showIsHidden"/> hidden is show
+    <button ng-show="showIsHidden">Click me to Hidden</button>
+    <br/>
+<!--ng-click to count in one click-->
+    <p>Total Click :{{clickcounter}}</p>
+    <button ng-click="clickcounter=clickcounter+1">Click Me to One Count</button>
+
+
+</div>
+
+
+
+
+</body>
+</html>
